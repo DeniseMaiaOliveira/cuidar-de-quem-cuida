@@ -73,7 +73,7 @@
         .hero h1 span { color: var(--primary); }
         
         .sub-english {
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 600;
             color: var(--text-muted);
             font-style: italic;
@@ -118,10 +118,10 @@
     <section class="hero">
         <div class="hero-badge" id="heroBadge">✨ Apoio completo para quem cuida de quem ama</div>
         
-        <h1 id="heroTitle">Cuidar do seu bem-estar é o primeiro passo para <span>cuidar bem do outro</span></h1>
+        <h1 id="heroTitle">Cuidar de <span>quem cuida</span></h1>
         
-        <div class="sub-english">
-            — Caring for the caregivers: Taking care of yourself is taking care of your loved one —
+        <div class="sub-english" id="heroSubtitle">
+            The caregivers need care too
         </div>
 
         <p id="heroDesc">A primeira plataforma prática criada para aliviar a exaustão mental de cuidadores, organizar rotinas sem estresse e aproximar famílias com segurança.</p>
@@ -167,7 +167,8 @@
                 topBar: "🎉 Promoção de Lançamento: Teste ilimitado por 7 dias grátis!",
                 navCta: "Testar Grátis",
                 heroBadge: "✨ Apoio completo para quem cuida de quem ama",
-                heroTitle: "Cuidar do seu bem-estar é o primeiro passo para <span>cuidar bem do outro</span>",
+                heroTitle: "Cuidar de <span>quem cuida</span>",
+                heroSubtitle: "The caregivers need care too",
                 heroDesc: "A primeira plataforma prática criada para aliviar a exaustão mental de cuidadores, organizar rotinas sem estresse e aproximar famílias com segurança.",
                 heroCta: "Começar 7 Dias Grátis Agora",
                 f1Title: "Botão de Alívio (SOS)",
@@ -185,7 +186,8 @@
                 topBar: "🎉 Launch Offer: 7 days unlimited free trial!",
                 navCta: "Try for Free",
                 heroBadge: "✨ Complete support for family and professional caregivers",
-                heroTitle: "Taking care of yourself is the first step to <span>caring for your loved one</span>",
+                heroTitle: "Caring for <span>the caregivers</span>",
+                heroSubtitle: "The caregivers need care too",
                 heroDesc: "The first practical platform built to relieve mental burnout, organize routines effortlessly, and support family caregivers.",
                 heroCta: "Start Your 7-Day Free Trial",
                 f1Title: "Relief Button (SOS)",
@@ -210,6 +212,7 @@
             document.getElementById('navCta').innerText = data.navCta;
             document.getElementById('heroBadge').innerText = data.heroBadge;
             document.getElementById('heroTitle').innerHTML = data.heroTitle;
+            document.getElementById('heroSubtitle').innerText = data.heroSubtitle;
             document.getElementById('heroDesc').innerText = data.heroDesc;
             document.getElementById('heroCta').innerText = data.heroCta;
             document.getElementById('f1Title').innerText = data.f1Title;
@@ -226,4 +229,3 @@
     </script>
 </body>
 </html>
-
