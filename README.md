@@ -1,1 +1,0 @@
-# cuidar-de-quem-cuida
